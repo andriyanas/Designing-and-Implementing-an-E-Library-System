@@ -1,38 +1,57 @@
 Designing and Implementing an E-Library System
 
-1. Project's Objectives
-The primary goal of the e-library application is to manage multiple libraries, each housing a diverse collection of books available for borrowing. The system enables users to borrow books, place holds on unavailable books, and manage their accounts. Key functionalities include user registration, book categorization, loan management, and a hold system to ensure a seamless borrowing experience.
+Project Objectives
 
-2. Designing The Database
-Creating a relational database for the e-library system involves several crucial steps:
-  a.	Mission Statement
-      To design a robust and scalable e-library application that efficiently manages multiple libraries, tracks book availability, and provides a seamless user experience for borrowing and placing holds on books.
-  b.	ERD Design
-      The Entity-Relationship Diagram (ERD) illustrates the relationships between various entities in the e-library system. The primary entities include:
-      •	Users: Information about registered users.
-      •	Libraries: Details of each library.
-      •	Books: Information on book titles, authors, categories, and quantities.
-      •	Loans: Records of books borrowed by users.
-      •	Holds: Records of books placed on hold by users.
+The e-library application manages multiple libraries, each with a diverse collection of borrowable books. Users can borrow books, place holds on unavailable ones, and manage their accounts. Key functionalities include:
 
-3. Implementing The Design
-   Implementing the ERD in PostgreSQL involves translating the ERD into SQL DDL (Data Definition Language) statements. The tables and relationships defined in the ERD are created in the PostgreSQL database using these DDL statements.
+User registration
+Book categorization
+Loan management
+Hold system (for seamless borrowing)
+Designing the Database
 
-4. Populating the Database
-   The dummy dataset for each table is generated using Python and the Faker library. This dataset adheres to the rules and relational logic of the database.
- 
-5. Retrieve Data
-   To retrieve meaningful insights from the database, several questions are posed, and SQL queries are executed to answer them. For example:
-    a.	What is the average loan duration for books? How many books are currently on loan?
-    b.	What are the most borrowed books?
-    c.	Which users have borrowed the most books? How many books are currently on loan?
-    d.	Which libraries have the highest number of books on hold?
-    e.	What are the most common categories of borrowed books?
+Creating a relational database for the e-library system involves several steps:
 
-6. References
-    •	PostgreSQL Documentation: https://www.postgresql.org/docs/
-    •	Faker Library Documentation: https://faker.readthedocs.io/en/master/
-    •	Pandas Documentation: https://pandas.pydata.org/pandas-docs/stable/
-    •	Tabulate Documentation: https://pypi.org/project/tabulate/
+a. Mission Statement
 
-This project demonstrates the design, implementation, and querying of an e-library system, leveraging PostgreSQL and Python for effective database management and data generation. For the complete code, ERD, and dataset, visit my GitHub repository.
+To design a robust and scalable e-library application that:
+
+Manages multiple libraries efficiently.
+Tracks book availability.
+Provides a seamless user experience for borrowing and placing holds.
+b. ERD Design
+
+The Entity-Relationship Diagram (ERD) illustrates relationships between entities:
+
+Users: Information about registered users.
+Libraries: Details of each library.
+Books: Information on titles, authors, categories, and quantities.
+Loans: Records of books borrowed by users.
+Holds: Records of books placed on hold by users.
+Implementing the Design
+
+The ERD is implemented in PostgreSQL by translating it into SQL DDL (Data Definition Language) statements. These statements create tables and relationships in the database.
+
+Populating the Database
+
+A dummy dataset for each table is generated using Python and the Faker library. This dataset adheres to the database's rules and relational logic.
+
+Retrieving Data
+
+SQL queries are used to retrieve insights from the database:
+
+Average loan duration? Number of books currently on loan?
+Most borrowed books? Users who borrowed the most?
+Libraries with the highest number of holds?
+Most common categories of borrowed books?
+References
+
+PostgreSQL Documentation: https://www.postgresql.org/docs/
+Faker Library Documentation: https://faker.readthedocs.io/en/master/
+Pandas Documentation: https://pandas.pydata.org/pandas-docs/stable/
+Tabulate Documentation: https://pypi.org/project/tabulate/
+Project Scope
+
+This project demonstrates the design, implementation, and querying of an e-library system. It leverages PostgreSQL and Python for effective database management and data generation.
+
+For the complete code, ERD, and dataset, visit my GitHub repository.
